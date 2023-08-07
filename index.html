@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>African Countries</title>
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<script src="./JS/script.js" defer></script>
+	</head>
+	<body>
+		<h1>
+			List of African Countries<img
+				src="./img/Screenshot (120).png"
+				alt="African map"
+				width="70px"
+				height="70px"
+			/>
+		</h1>
+
+		<button type="button" id="help-button">? Help ?</button>
+		<a href="./presidents/presidents.html" id="showPresidentsBtn" class="button"
+			>Show Presidents Table</a
+		>
+		<br />
+		<div id="total-population"></div>
+		<hr />
+
+		<dialog id="help-dialog">
+			<button type="button" id="close-help-dialog">Close</button>
+			<h2>🌍 Adventure Instructions 🗺️</h2>
+			<p>
+				Embark on an exciting journey by clicking on the
+				<strong>country names!</strong>
+			</p>
+			<p>
+				Discover fascinating facts, breathtaking landscapes, and amazing
+				cultures.
+			</p>
+			<p>Don't forget to bring your curiosity and sense of wonder along!</p>
+			<p>
+				When you're ready to return, simply click the
+				<strong>"close" button.</strong>
+			</p>
+		</dialog>
+
+		<ul>
+			<li>Algeria</li>
+
+			<dialog data-algeria>
+				<button type="button">close</button>
+				<div class="country-name">Algeria</div>
+				<div class="country-info">Population: 43 million</div>
+				<div class="country-info">Location: North Africa</div>
+				<div class="country-info">Capital: Algiers</div>
+				<div class="country-info">Official Language: Arabic</div>
+				<div class="country-info">Currency: Algerian Dinar</div>
+			</dialog>
+
+			<li>Angola</li>
+
+			<dialog data-angola>
+				<button>close</button>
+				<div class="country-name">Angola</div>
+				<div class="country-info">Population: 32.9 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">Capital: Luanda</div>
+				<div class="country-info">Official Language: Portuguese</div>
+				<div class="country-info">Currency: Angolan Kwanza</div>
+			</dialog>
+
+			<li>Benin</li>
+
+			<dialog data-benin>
+				<button>close</button>
+				<div class="country-name">Benin</div>
+				<div class="country-info">Population: 12.1 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Porto-Novo</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Botswana</li>
+
+			<dialog data-botswana>
+				<button>close</button>
+				<div class="country-name">Botswana</div>
+				<div class="country-info">Population: 2.3 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">Capital: Gaborone</div>
+				<div class="country-info">Official Language: English, Tswana</div>
+				<div class="country-info">Currency: Botswana Pula</div>
+			</dialog>
+
+			<li>Burkina Faso</li>
+
+			<dialog data-burkinafaso>
+				<button>close</button>
+				<div class="country-name">Burkina Faso</div>
+				<div class="country-info">Population: 20.5 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Ouagadougou</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Burundi</li>
+
+			<dialog data-burundi>
+				<button>close</button>
+				<div class="country-name">Burundi</div>
+				<div class="country-info">Population: 11.6 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Bujumbura</div>
+				<div class="country-info">Official Language: Kirundi, French</div>
+				<div class="country-info">Currency: Burundian franc</div>
+			</dialog>
+
+			<li>Cabo Verde</li>
+
+			<dialog data-caboverde>
+				<button>close</button>
+				<div class="country-name">Cabo Verde</div>
+				<div class="country-info">Population: 0.6 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Praia</div>
+				<div class="country-info">Official Language: Portuguese</div>
+				<div class="country-info">Currency: Cape Verdean escudo</div>
+			</dialog>
+
+			<li>Cameroon</li>
+
+			<dialog data-cameroon>
+				<button>close</button>
+				<div class="country-name">Cameroon</div>
+				<div class="country-info">Population: 26.7 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Yaoundé</div>
+				<div class="country-info">Official Language: French, English</div>
+				<div class="country-info">Currency: Central African CFA franc</div>
+			</dialog>
+
+			<li>Central African Republic</li>
+
+			<dialog data-centralafricanrepublic>
+				<button>close</button>
+				<div class="country-name">Central African Republic</div>
+				<div class="country-info">Population: 4.7 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Bangui</div>
+				<div class="country-info">Official Language: French, Sango</div>
+				<div class="country-info">Currency: Central African CFA franc</div>
+			</dialog>
+
+			<li>Chad</li>
+
+			<dialog data-chad>
+				<button>close</button>
+				<div class="country-name">Chad</div>
+				<div class="country-info">Population: 15.4 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: N'Djamena</div>
+				<div class="country-info">Official Language: French, Arabic</div>
+				<div class="country-info">Currency: Central African CFA franc</div>
+			</dialog>
+
+			<li>Comoros</li>
+
+			<dialog data-comoros>
+				<button>close</button>
+				<div class="country-name">Comoros</div>
+				<div class="country-info">Population: 0.9 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Moroni</div>
+				<div class="country-info">
+					Official Language: Comorian, Arabic, French
+				</div>
+				<div class="country-info">Currency: Comorian franc</div>
+			</dialog>
+
+			<li>Congo</li>
+
+			<dialog data-congo>
+				<button>close</button>
+				<div class="country-name">Congo</div>
+				<div class="country-info">Population: 5.4 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Brazzaville</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: Central African CFA franc</div>
+			</dialog>
+
+			<li>Côte d'Ivoire</li>
+
+			<dialog data-cotedivoire>
+				<button>close</button>
+				<div class="country-name">Côte d'Ivoire</div>
+				<div class="country-info">Population: 26.4 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Yamoussoukro</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Democratic Republic of Congo</li>
+
+			<dialog data-democraticrepublicofcongo>
+				<button>close</button>
+				<div class="country-name">Democratic Republic of Congo</div>
+				<div class="country-info">Population: 101.8 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Kinshasa</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: Congolese franc</div>
+			</dialog>
+
+			<li>Djibouti</li>
+
+			<dialog data-djibouti>
+				<button>close</button>
+				<div class="country-name">Djibouti</div>
+				<div class="country-info">Population: 1.1 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Djibouti City</div>
+				<div class="country-info">Official Language: Arabic, French</div>
+				<div class="country-info">Currency: Djiboutian franc</div>
+			</dialog>
+
+			<li>Egypt</li>
+
+			<dialog data-egypt>
+				<button>close</button>
+				<div class="country-name">Egypt</div>
+				<div class="country-info">Population: 104.2 million</div>
+				<div class="country-info">Location: North Africa, Northeast Africa</div>
+				<div class="country-info">Capital: Cairo</div>
+				<div class="country-info">Official Language: Arabic</div>
+				<div class="country-info">Currency: Egyptian pound</div>
+			</dialog>
+
+			<li>Equatorial Guinea</li>
+
+			<dialog data-equatorialguinea>
+				<button>close</button>
+				<div class="country-name">Equatorial Guinea</div>
+				<div class="country-info">Population: 1.4 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Malabo</div>
+				<div class="country-info">
+					Official Language: Spanish, French, Portuguese
+				</div>
+				<div class="country-info">Currency: Central African CFA franc</div>
+			</dialog>
+
+			<li>Eritrea</li>
+
+			<dialog data-eritrea>
+				<button>close</button>
+				<div class="country-name">Eritrea</div>
+				<div class="country-info">Population: 3.5 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Asmara</div>
+				<div class="country-info">
+					Official Language: Tigrinya, Arabic, English
+				</div>
+				<div class="country-info">Currency: Nakfa</div>
+			</dialog>
+
+			<li>Eswatini</li>
+
+			<dialog data-eswatini>
+				<button>close</button>
+				<div class="country-name">Eswatini</div>
+				<div class="country-info">Population: 1.1 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">
+					Capital: Mbabane (administrative), Lobamba (legislative)
+				</div>
+				<div class="country-info">Official Language: Swazi, English</div>
+				<div class="country-info">Currency: Lilangeni, South African rand</div>
+			</dialog>
+
+			<li>Ethiopia</li>
+
+			<dialog data-ethiopia>
+				<button>close</button>
+				<div class="country-name">Ethiopia</div>
+				<div class="country-info">Population: 118.4 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Addis Ababa</div>
+				<div class="country-info">Official Language: Amharic</div>
+				<div class="country-info">Currency: Ethiopian birr</div>
+			</dialog>
+
+			<li>Gabon</li>
+
+			<dialog data-gabon>
+				<button>close</button>
+				<div class="country-name">Gabon</div>
+				<div class="country-info">Population: 2.1 million</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Libreville</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: Central African CFA franc</div>
+			</dialog>
+
+			<li>Gambia</li>
+
+			<dialog data-gambia>
+				<button>close</button>
+				<div class="country-name">Gambia</div>
+				<div class="country-info">Population: 2.4 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Banjul</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Gambian dalasi</div>
+			</dialog>
+
+			<li>Ghana</li>
+
+			<dialog data-ghana>
+				<button>close</button>
+				<div class="country-name">Ghana</div>
+				<div class="country-info">Population: 31.5 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Accra</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Ghanaian cedi</div>
+			</dialog>
+
+			<li>Guinea</li>
+
+			<dialog data-guinea>
+				<button>close</button>
+				<div class="country-name">Guinea</div>
+				<div class="country-info">Population: 12.7 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Conakry</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: Guinean franc</div>
+			</dialog>
+
+			<li>Guinea-Bissau</li>
+
+			<dialog data-guineabissau>
+				<button>close</button>
+				<div class="country-name">Guinea-Bissau</div>
+				<div class="country-info">Population: 1.9 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Bissau</div>
+				<div class="country-info">Official Language: Portuguese</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Kenya</li>
+
+			<dialog data-kenya>
+				<button>close</button>
+				<div class="country-name">Kenya</div>
+				<div class="country-info">Population: 54.4 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Nairobi</div>
+				<div class="country-info">Official Language: Swahili, English</div>
+				<div class="country-info">Currency: Kenyan shilling</div>
+			</dialog>
+
+			<li>Lesotho</li>
+
+			<dialog data-lesotho>
+				<button>close</button>
+				<div class="country-name">Lesotho</div>
+				<div class="country-info">Population: 2.1 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">Capital: Maseru</div>
+				<div class="country-info">Official Language: Sesotho, English</div>
+				<div class="country-info">
+					Currency: Lesotho loti, South African rand
+				</div>
+			</dialog>
+
+			<li>Liberia</li>
+
+			<dialog data-liberia>
+				<button>close</button>
+				<div class="country-name">Liberia</div>
+				<div class="country-info">Population: 5.1 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Monrovia</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Liberian dollar</div>
+			</dialog>
+
+			<li>Libya</li>
+
+			<dialog data-libya>
+				<button>close</button>
+				<div class="country-name">Libya</div>
+				<div class="country-info">Population: 6.8 million</div>
+				<div class="country-info">Location: North Africa</div>
+				<div class="country-info">Capital: Tripoli</div>
+				<div class="country-info">Official Language: Arabic</div>
+				<div class="country-info">Currency: Libyan dinar</div>
+			</dialog>
+			<li>Madagascar</li>
+
+			<dialog data-madagascar>
+				<button>close</button>
+				<div class="country-name">Madagascar</div>
+				<div class="country-info">Population: 27.7 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Antananarivo</div>
+				<div class="country-info">Official Language: Malagasy, French</div>
+				<div class="country-info">Currency: Malagasy ariary</div>
+			</dialog>
+
+			<li>Malawi</li>
+
+			<dialog data-malawi>
+				<button>close</button>
+				<div class="country-name">Malawi</div>
+				<div class="country-info">Population: 19.3 million</div>
+				<div class="country-info">Location: Southeast Africa</div>
+				<div class="country-info">Capital: Lilongwe</div>
+				<div class="country-info">Official Language: Chewa, English</div>
+				<div class="country-info">Currency: Malawian kwacha</div>
+			</dialog>
+
+			<li>Mali</li>
+
+			<dialog data-mali>
+				<button>close</button>
+				<div class="country-name">Mali</div>
+				<div class="country-info">Population: 20.3 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Bamako</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Mauritania</li>
+
+			<dialog data-mauritania>
+				<button>close</button>
+				<div class="country-name">Mauritania</div>
+				<div class="country-info">Population: 4.6 million</div>
+				<div class="country-info">Location: Northwest Africa</div>
+				<div class="country-info">Capital: Nouakchott</div>
+				<div class="country-info">Official Language: Arabic</div>
+				<div class="country-info">Currency: Mauritanian ouguiya</div>
+			</dialog>
+
+			<li>Mauritius</li>
+
+			<dialog data-mauritius>
+				<button>close</button>
+				<div class="country-name">Mauritius</div>
+				<div class="country-info">Population: 1.3 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Port Louis</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Mauritian rupee</div>
+			</dialog>
+
+			<li>Morocco</li>
+
+			<dialog data-morocco>
+				<button>close</button>
+				<div class="country-name">Morocco</div>
+				<div class="country-info">Population: 37.2 million</div>
+				<div class="country-info">Location: North Africa</div>
+				<div class="country-info">Capital: Rabat</div>
+				<div class="country-info">Official Language: Arabic, Berber</div>
+				<div class="country-info">Currency: Moroccan dirham</div>
+			</dialog>
+
+			<li>Mozambique</li>
+
+			<dialog data-mozambique>
+				<button>close</button>
+				<div class="country-name">Mozambique</div>
+				<div class="country-info">Population: 31.3 million</div>
+				<div class="country-info">Location: Southeast Africa</div>
+				<div class="country-info">Capital: Maputo</div>
+				<div class="country-info">Official Language: Portuguese</div>
+				<div class="country-info">Currency: Mozambican metical</div>
+			</dialog>
+
+			<li>Namibia</li>
+
+			<dialog data-namibia>
+				<button>close</button>
+				<div class="country-name">Namibia</div>
+				<div class="country-info">Population: 2.5 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">Capital: Windhoek</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">
+					Currency: Namibian dollar, South African rand
+				</div>
+			</dialog>
+
+			<li>Niger</li>
+
+			<dialog data-niger>
+				<button>close</button>
+				<div class="country-name">Niger</div>
+				<div class="country-info">Population: 25.2 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Niamey</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Nigeria</li>
+
+			<dialog data-nigeria>
+				<button>close</button>
+				<div class="country-name">Nigeria</div>
+				<div class="country-info">Population: 211 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Abuja</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Nigerian naira</div>
+			</dialog>
+
+			<li>Rwanda</li>
+
+			<dialog data-rwanda>
+				<button>close</button>
+				<div class="country-name">Rwanda</div>
+				<div class="country-info">Population: 13.1 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Kigali</div>
+				<div class="country-info">
+					Official Language: Kinyarwanda, English, French
+				</div>
+				<div class="country-info">Currency: Rwandan franc</div>
+			</dialog>
+
+			<li>Sao Tome and Principe</li>
+
+			<dialog data-saotomeandprincipe>
+				<button>close</button>
+				<div class="country-name">Sao Tome and Principe</div>
+				<div class="country-info">Population: 219,159</div>
+				<div class="country-info">Location: Central Africa</div>
+				<div class="country-info">Capital: Sao Tome</div>
+				<div class="country-info">Official Language: Portuguese</div>
+				<div class="country-info">Currency: Sao Tome and Principe dobra</div>
+			</dialog>
+
+			<li>Senegal</li>
+
+			<dialog data-senegal>
+				<button>close</button>
+				<div class="country-name">Senegal</div>
+				<div class="country-info">Population: 16.7 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Dakar</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Seychelles</li>
+
+			<dialog data-seychelles>
+				<button>close</button>
+				<div class="country-name">Seychelles</div>
+				<div class="country-info">Population: 98,462</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Victoria</div>
+				<div class="country-info">
+					Official Languages: English, French, Seychellois Creole
+				</div>
+				<div class="country-info">Currency: Seychellois rupee</div>
+			</dialog>
+
+			<li>Sierra Leone</li>
+
+			<dialog data-sierraleone>
+				<button>close</button>
+				<div class="country-name">Sierra Leone</div>
+				<div class="country-info">Population: 8.1 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Freetown</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Sierra Leonean leone</div>
+			</dialog>
+
+			<li>Somalia</li>
+
+			<dialog data-somalia>
+				<button>close</button>
+				<div class="country-name">Somalia</div>
+				<div class="country-info">Population: 15.9 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Mogadishu</div>
+				<div class="country-info">Official Languages: Somali, Arabic</div>
+				<div class="country-info">Currency: Somali shilling</div>
+			</dialog>
+
+			<li>South Africa</li>
+
+			<dialog data-southafrica>
+				<button>close</button>
+				<div class="country-name">South Africa(RSA)</div>
+				<div class="country-info">Population: 59.6 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">
+					Capital: Pretoria (executive), Bloemfontein (judicial), Cape Town
+					(legislative)
+				</div>
+				<div class="country-info">
+					Official Languages: 11 official languages, including Zulu, Xhosa,
+					Afrikaans, English
+				</div>
+				<div class="country-info">Currency: South African rand</div>
+			</dialog>
+
+			<li>South Sudan</li>
+
+			<dialog data-southsudan>
+				<button>close</button>
+				<div class="country-name">South Sudan</div>
+				<div class="country-info">Population: 11.1 million</div>
+				<div class="country-info">Location: East-Central Africa</div>
+				<div class="country-info">Capital: Juba</div>
+				<div class="country-info">Official Languages: English</div>
+				<div class="country-info">Currency: South Sudanese pound</div>
+			</dialog>
+
+			<li>Sudan</li>
+
+			<dialog data-sudan>
+				<button>close</button>
+				<div class="country-name">Sudan</div>
+				<div class="country-info">Population: 45.4 million</div>
+				<div class="country-info">Location: Northeast Africa</div>
+				<div class="country-info">Capital: Khartoum</div>
+				<div class="country-info">Official Languages: Arabic, English</div>
+				<div class="country-info">Currency: Sudanese pound</div>
+			</dialog>
+
+			<li>Tanzania</li>
+
+			<dialog data-tanzania>
+				<button>close</button>
+				<div class="country-name">Tanzania</div>
+				<div class="country-info">Population: 61.5 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">
+					Capital: Dodoma (official), Dar es Salaam (administrative)
+				</div>
+				<div class="country-info">Official Languages: Swahili, English</div>
+				<div class="country-info">Currency: Tanzanian shilling</div>
+			</dialog>
+
+			<li>Togo</li>
+
+			<dialog data-togo>
+				<button>close</button>
+				<div class="country-name">Togo</div>
+				<div class="country-info">Population: 8.3 million</div>
+				<div class="country-info">Location: West Africa</div>
+				<div class="country-info">Capital: Lome</div>
+				<div class="country-info">Official Language: French</div>
+				<div class="country-info">Currency: West African CFA franc</div>
+			</dialog>
+
+			<li>Tunisia</li>
+
+			<dialog data-tunisia>
+				<button>close</button>
+				<div class="country-name">Tunisia</div>
+				<div class="country-info">Population: 11.8 million</div>
+				<div class="country-info">Location: North Africa</div>
+				<div class="country-info">Capital: Tunis</div>
+				<div class="country-info">Official Language: Arabic</div>
+				<div class="country-info">Currency: Tunisian dinar</div>
+			</dialog>
+
+			<li>Uganda</li>
+			<dialog data-uganda>
+				<button>close</button>
+				<div class="country-name">Uganda</div>
+				<div class="country-info">Population: 46.8 million</div>
+				<div class="country-info">Location: East Africa</div>
+				<div class="country-info">Capital: Kampala</div>
+				<div class="country-info">Official Languages: English, Swahili</div>
+				<div class="country-info">Currency: Ugandan shilling</div>
+			</dialog>
+
+			<li>Zambia</li>
+
+			<dialog data-zambia>
+				<button>close</button>
+				<div class="country-name">Zambia</div>
+				<div class="country-info">Population: 18.9 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">Capital: Lusaka</div>
+				<div class="country-info">Official Language: English</div>
+				<div class="country-info">Currency: Zambian kwacha</div>
+			</dialog>
+
+			<li>Zimbabwe</li>
+
+			<dialog data-zimbabwe>
+				<button>close</button>
+				<div class="country-name">Zimbabwe</div>
+				<div class="country-info">Population: 14.8 million</div>
+				<div class="country-info">Location: Southern Africa</div>
+				<div class="country-info">Capital: Harare</div>
+				<div class="country-info">
+					Official Languages: English, Shona, Ndebele
+				</div>
+				<div class="country-info">Currency: Zimbabwean dollar</div>
+			</dialog>
+		</ul>
+	</body>
+</html>

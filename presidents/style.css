@@ -1,0 +1,41 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background: linear-gradient(to bottom right, #f2f2f2, #e6e6e6);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #ffcc00;
+}
+
+th:first-child,
+td:first-child {
+	font-weight: bold;
+}
+
+h1 {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-weight: bolder;
+	color: #ff9900;
+	text-align: center;
+	height: 50px;
+	font-size: 48px;
+	transition: transform 0.5s ease-in-out;
+}
+
+h1:hover {
+	transform: scale(1.5); /* Scale to 1.5 on hover */
+}
